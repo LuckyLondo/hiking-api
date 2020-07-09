@@ -22,7 +22,6 @@ public class StatusControllerTests {
 
     @Before
     public void setup() {
-        controller = new StatusController();
         statusResult = "{\"status\": \"Ok\"}";
     }
 
@@ -30,6 +29,12 @@ public class StatusControllerTests {
     public void testStatus() {
         when(controller.status()).thenReturn(statusResult);
         assertEquals(controller.status(), statusResult);
+    }
+
+    @Test
+    public void testError() throws Exception {
+        when(controller.error()).thenReturn(statusResult);
+        assertEquals(controller.error(), statusResult);
     }
 
 

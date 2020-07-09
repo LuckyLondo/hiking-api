@@ -12,9 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StatusController extends RestResponseEntityExceptionHandler {
 
-    public StatusController()
-    {}
-
     @Operation(summary = "Status", responses = {
             @ApiResponse(
                     description = "Successful Operation",
