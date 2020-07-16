@@ -35,6 +35,4 @@ public class StatusControllerTests {
         assertEquals(ex.getMessage(), "SHIT");
     }
 
-
-
 }
